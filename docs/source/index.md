@@ -30,8 +30,8 @@ title: 学习笔记
 :maxdepth: 2
 :caption: Linux常用命令
 
-Linux/commands/firewalld
-Linux/commands/tail
+Linux/commands/index
+Linux/test
 ```
 
 
