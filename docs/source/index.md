@@ -24,6 +24,11 @@ title: 学习笔记
 
 ::::
 
+:::{seealso}  
+sphinx参看编写文档 [sphinx-book-theme](https://sphinx-book-theme.readthedocs.io/en/stable/index.html).  
+Markdown参看编写文档 [sphinx-book-theme](https://github.com/MicrosoftDocs/Advertising-docs/tree/main).  
+:::
+
 # 目录
 
 ```{toctree}
