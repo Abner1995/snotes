@@ -46,3 +46,8 @@ language = 'zh-cn'
 
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
+
+
+# -- ABlog config -------------------------------------------------
+
+bibtex_bibfiles = ["references.bib"]
