@@ -145,14 +145,13 @@ html_theme_options = {
             "name": "GitHub",
             "url": "https://github.com/Abner1995/snotes.git",
             "icon": "fa-brands fa-github",
-        }
-        # ,
-        # {
-        #     "name": "PyPI",
-        #     "url": "https://pypi.org/project/sphinx-book-theme/",
-        #     "icon": "https://img.shields.io/pypi/dw/sphinx-book-theme",
-        #     "type": "url",
-        # },
+        },
+        {
+            "name": "PyPI",
+            "url": "https://github.com/Abner1995/snotes.git",
+            "icon": "https://img.shields.io/pypi/dw/sphinx-book-theme",
+            "type": "url",
+        },
     ],
     # For testing
     # "use_fullscreen_button": False,
