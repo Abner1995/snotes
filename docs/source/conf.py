@@ -136,22 +136,23 @@ html_theme_options = {
     },
     "icon_links": [
         {
-            "name": "Executable Books",
-            "url": "https://executablebooks.org/",
+            "name": "notes",
+            "url": "https://snotes.readthedocs.io/zh-cn/latest/",
             "icon": "_static/ebp-logo.png",
             "type": "local",
         },
         {
             "name": "GitHub",
-            "url": "https://github.com/executablebooks/sphinx-book-theme",
+            "url": "https://github.com/Abner1995/snotes.git",
             "icon": "fa-brands fa-github",
-        },
-        {
-            "name": "PyPI",
-            "url": "https://pypi.org/project/sphinx-book-theme/",
-            "icon": "https://img.shields.io/pypi/dw/sphinx-book-theme",
-            "type": "url",
-        },
+        }
+        # ,
+        # {
+        #     "name": "PyPI",
+        #     "url": "https://pypi.org/project/sphinx-book-theme/",
+        #     "icon": "https://img.shields.io/pypi/dw/sphinx-book-theme",
+        #     "type": "url",
+        # },
     ],
     # For testing
     # "use_fullscreen_button": False,
@@ -193,3 +194,44 @@ linkcheck_ignore = [
     "https://doi.org",  # These don't resolve properly and cause SSL issues
 ]
 linkcheck_exclude_documents = ["changelog"]
+
+# -- Download latest theme elements page from PyData -----------------------------
+
+# path_pydata_content = "https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/user_guide/theme-elements.md"  # noqa
+# path_content_file = Path(__file__).parent / "content/pydata-content-blocks.md"
+# if not path_content_file.exists():
+#     with urlopen(path_pydata_content) as resp:
+#         # Read in the content page file, then update the title and add context
+#         content = resp.read().decode().split("\n")
+#         ix_title = content.index("# Theme-specific elements")
+#         content[ix_title] = "# PyData Theme Elements"
+#         content.insert(
+#             ix_title + 1,
+#             "\nThis is a collection of content blocks with special support from this theme's parent theme, [the PyData Sphinx Theme](https://pydata-sphinx-theme.readthedocs.io/en/latest/user_guide/theme-elements.html)\n",  # noqa
+#         )  # noqa
+#         content = "\n".join(content)
+#         # Replace a relative link in the pydata docs w/ the respective one here
+#         content = content.replace("../examples/pydata.ipynb", "notebooks.md")
+#         # Write to disk in a location that will be ignored by git
+#         path_content_file.write_text(content)
+
+
+def setup(app):
+    # -- To demonstrate ReadTheDocs switcher -------------------------------------
+    # This links a few JS and CSS files that mimic the environment that RTD uses
+    # so that we can test RTD-like behavior. We don't need to run it on RTD and we
+    # don't wanted it loaded in GitHub Actions because it messes up the lighthouse
+    # results.
+    if not os.environ.get("READTHEDOCS") and not os.environ.get("GITHUB_ACTIONS"):
+        app.add_css_file(
+            "https://assets.readthedocs.org/static/css/readthedocs-doc-embed.css"
+        )
+        app.add_css_file("https://assets.readthedocs.org/static/css/badge_only.css")
+
+        # Create the dummy data file so we can link it
+        # ref: https://github.com/readthedocs/readthedocs.org/blob/bc3e147770e5740314a8e8c33fec5d111c850498/readthedocs/core/static-src/core/js/doc-embed/footer.js  # noqa: E501
+        app.add_js_file("rtd-data.js")
+        app.add_js_file(
+            "https://assets.readthedocs.org/static/javascript/readthedocs-doc-embed.js",
+            priority=501,
+        )
