@@ -9,3 +9,7 @@ sphinx-examples
 sphinxcontrib-bibtex
 runthis-sphinxext
 sphinx_copybutton
+sphinx_tabs
+sphinx_thebe
+sphinx_togglebutton
+sphinxcontrib.bibtex
