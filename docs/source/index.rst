@@ -1,26 +1,20 @@
-Welcome to Lumache's documentation!
-===================================
+.. snotes documentation master file, created by
+   sphinx-quickstart on Thu Nov 28 19:27:41 2024.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-.. note::
-
-   This project is under active development.
-
-Contents
---------
+Welcome to snotes's documentation!
+==================================
 
 .. toctree::
-   :caption: PHP
+   :maxdepth: 2
+   :caption: Contents:
 
-   PHP/1.md
 
 
-.. toctree::
-   :caption: dotnet
+Indices and tables
+==================
 
-   dotnet/1.md
-   dotnet/WebAPI.md  
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
