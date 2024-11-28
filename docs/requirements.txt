@@ -8,3 +8,4 @@ sphinxcontrib-youtube
 sphinx-examples
 sphinxcontrib-bibtex
 runthis-sphinxext
+sphinx_copybutton
