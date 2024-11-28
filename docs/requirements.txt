@@ -6,7 +6,7 @@ myst_nb
 numpydoc
 sphinxcontrib-youtube
 sphinx-examples
-sphinxcontrib-bibtex
+sphinxcontrib-bibtex==1.0.0
 runthis-sphinxext
 sphinx_copybutton
 sphinx_tabs
