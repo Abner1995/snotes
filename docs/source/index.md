@@ -43,7 +43,7 @@ Linux/test
 :maxdepth: 2
 :caption: python
 
-python/window
+python/index
 ```
 
 
