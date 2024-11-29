@@ -33,7 +33,7 @@ Markdown参看编写文档 [Markdown](https://github.com/MicrosoftDocs/Advertisi
 
 ```{toctree}
 :maxdepth: 2
-:caption: Linux常用命令
+:caption: Linux
 
 Linux/commands/index
 ```
