@@ -36,7 +36,6 @@ Markdown参看编写文档 [Markdown](https://github.com/MicrosoftDocs/Advertisi
 :caption: Linux常用命令
 
 Linux/commands/index
-Linux/test
 ```
 
 ```{toctree}
@@ -44,6 +43,13 @@ Linux/test
 :caption: python
 
 python/index
+```
+
+```{toctree}
+:maxdepth: 2
+:caption: dotnet
+
+dotnet/index
 ```
 
 
