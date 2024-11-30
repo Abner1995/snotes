@@ -24,6 +24,11 @@ title: 学习笔记
 
 ::::
 
+:::{note}  
+笔记仓库地址 [github](https://github.com/Abner1995/snotes)  
+笔记文档 [readthedocs](https://snotes.readthedocs.io/zh-cn/latest/index.html)  
+:::  
+
 :::{seealso}  
 sphinx参看编写文档 [sphinx-book-theme](https://sphinx-book-theme.readthedocs.io/en/stable/index.html).  
 Markdown参看编写文档 [Markdown](https://github.com/MicrosoftDocs/Advertising-docs/tree/main).  

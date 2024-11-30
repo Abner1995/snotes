@@ -12,3 +12,4 @@ sphinx_copybutton
 sphinx_tabs
 sphinx_thebe
 sphinx_togglebutton
+sphinx-sitemap
