@@ -1,4 +1,5 @@
 # firewalld 
+
 ```bash  
 # 添加  
 sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="150.138.245.0/24" drop'  

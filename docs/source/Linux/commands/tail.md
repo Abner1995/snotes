@@ -1,4 +1,5 @@
 # tail  
+
 ```bash  
 # 查看指定文件的最后10行内容  
 tail -n 10 /www/wwwlogs/fang.iqitz.com.log  
