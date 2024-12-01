@@ -56,6 +56,30 @@ builder.Services.AddSwaggerGen(opts =>
         License = license,
         Contact = contact
     });
+    var securityScheme = new OpenApiSecurityScheme()
+    {
+        Name = "Authorization",
+        Description = "JWT Authorization Header info using bearer tokens",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT"
+    };
+    var securityRequirement = new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference{
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "bearerAuth"
+                }
+            },
+            new string[] {}
+        }
+    };
+    opts.AddSecurityDefinition("bearerAuth", securityScheme);
+    opts.AddSecurityRequirement(securityRequirement);
 });
 builder.Services.AddApiVersioning(opts =>
 {
