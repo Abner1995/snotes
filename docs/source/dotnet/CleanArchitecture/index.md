@@ -35,6 +35,7 @@ Asp.Net Core 8 Web Api： 简洁架构 + Azure 服务
 :::{seealso}  
 - Application项目引用Domain  
 - API项目引用Application    
+- API项目引用Infrastructure      
 - Infrastructure项目引用Application  
 :::
    
@@ -47,9 +48,10 @@ Asp.Net Core 8 Web Api： 简洁架构 + Azure 服务
 4. Flexibility： 系统能够适应变化、扩展或调整的能力、灵活性  
 5. Transparency： 开放性和可访问性  
 
-```{toctree}
-HTTPClient
-solutionModules
-Entities
-EntityFramework
+```{toctree}  
+HTTPClient  
+solutionModules  
+Entities  
+EntityFramework  
+FlexibleDatabaseConnection  
 ```

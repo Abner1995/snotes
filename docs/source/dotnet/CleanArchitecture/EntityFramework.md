@@ -118,3 +118,10 @@ public class DishConfig : IEntityTypeConfiguration<Dish>
     }
 }
 ```
+
+## 运行  
+1. 启动项设置Infrastructure  
+2. 程序包管理器设置Infrastructure  
+3. 运行Add-Migration InitialCreate
+4. 运行Update-Database
+5. 查看数据库是否生成  

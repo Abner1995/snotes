@@ -13,4 +13,5 @@
 
 1. CleanArchitecture.Application项目引用CleanArchitecture.Domain  
 2. CleanArchitecture.API项目引用CleanArchitecture.Application    
-3. CleanArchitecture.Infrastructure项目引用CleanArchitecture.Application
+3. CleanArchitecture.API项目引用CleanArchitecture.Infrastructure    
+4. CleanArchitecture.Infrastructure项目引用CleanArchitecture.Application  
