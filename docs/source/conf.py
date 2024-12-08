@@ -174,6 +174,13 @@ html_theme_options = {
     # "footer_end": ["test.html"]
 }
 
+html_context = {
+    "extra_meta": """
+        <meta name="description" content="这是全局描述">
+        <meta name="keywords" content="sphinx, book theme, meta 标签">
+    """
+}
+
 # sphinxext.opengraph
 ogp_social_cards = {
     "image": "_static/logo-square.png",

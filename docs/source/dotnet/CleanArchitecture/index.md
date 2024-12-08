@@ -5,6 +5,7 @@ Asp.Net Core 8 Web Api： 简洁架构 + Azure 服务
 :::{note}  
 仓库地址 [github](https://github.com/Abner1995/code/tree/master/csharp/code/CleanArchitecture)  
 视频教学 [bilibili](https://www.bilibili.com/video/BV1zS411N7F5/?spm_id_from=333.788.top_right_bar_window_custom_collection.content.click&vd_source=1f83a0bae14ae5b8eebb025a6b0e7af7)  
+视频仓库地址 [github](https://github.com/jakubkozera/Restaurants)  
 :::  
 
 ## 结构示意图  
@@ -54,4 +55,6 @@ solutionModules
 Entities
 EntityFramework
 FlexibleDatabaseConnection
+Seeder
+Retrievingentities
 ```
