@@ -57,5 +57,10 @@ python/index
 dotnet/index
 ```
 
+```{toctree}
+:maxdepth: 2
+:caption: PHP
 
+PHP/index
+```
 
