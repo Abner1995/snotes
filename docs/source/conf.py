@@ -32,7 +32,6 @@ extensions = [
     "sphinx_togglebutton",
     "sphinxcontrib.bibtex",
     "runthis.sphinxext",
-    # For the kitchen sink
     "sphinx.ext.todo",
     "sphinx_sitemap"
 ]
@@ -40,8 +39,8 @@ extensions = [
 # 设置网站的基本 URL
 html_baseurl = 'https://snotes.readthedocs.io/'
 
-# 可选：设置 sitemap 的文件名
-# html_extra_path = ['sitemap.xml']
+# 可选：设置
+# html_extra_path = []
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
