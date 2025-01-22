@@ -1,6 +1,5 @@
 # Retrieving DTOs  
 
-
 ## 使用DTO  
 
 在Application添加DTOs的RestaurantDto、DishDto  
@@ -104,6 +103,10 @@ internal class RestaurantsService(IRestaurantsRepository restaurantsRepository, 
 ```    
 
 ## 使用AutoMapper  
+
+```bash  
+Install-Package AutoMapper.Extensions.Microsoft.DependencyInjection -Version 12.0.1    
+``` 
 
 1. 在Application添加Profile的RestaurantProfile、DishProfile  
 ```csharp  
