@@ -59,4 +59,5 @@ Seeder
 Retrievingentities
 RetrievingDTOs
 Validation
+CQRSwithMediatR
 ```
