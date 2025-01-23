@@ -58,7 +58,7 @@ public class CreateRestaurantDtoValidators : AbstractValidator<CreateRestaurantD
     }
 }
 ```   
-4. 在Startup.cs中添加FluentValidation  
+4. 在Application中的ServiceCollectionExtensions添加FluentValidation  
 ```csharp  
 using CleanArchitecture.Application.Restaurants;
 using FluentValidation;

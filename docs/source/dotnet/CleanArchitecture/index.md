@@ -60,4 +60,6 @@ Retrievingentities
 RetrievingDTOs
 Validation
 CQRSwithMediatR
+Log
+Exceptions
 ```

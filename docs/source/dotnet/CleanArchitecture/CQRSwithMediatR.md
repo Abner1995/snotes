@@ -114,7 +114,7 @@ public class RestaurantProfile : Profile
 }
 ```  
 
-3. 把MediatR注入到Startup.cs中  
+3. 在Application中的ServiceCollectionExtensions添加MediatR  
 ```csharp  
 using CleanArchitecture.Application.Restaurants;
 using FluentValidation;
