@@ -62,4 +62,6 @@ Validation
 CQRSwithMediatR
 Log
 Exceptions
+ASPNETIdentity
+UserContext
 ```
