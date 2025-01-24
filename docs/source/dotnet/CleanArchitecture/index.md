@@ -65,4 +65,5 @@ Exceptions
 ASPNETIdentity
 UserContext
 authorization
+CustomUserClaims
 ```
