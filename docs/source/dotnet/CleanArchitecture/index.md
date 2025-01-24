@@ -64,4 +64,5 @@ Log
 Exceptions
 ASPNETIdentity
 UserContext
+authorization
 ```
