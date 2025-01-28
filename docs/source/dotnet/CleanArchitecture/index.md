@@ -66,4 +66,5 @@ ASPNETIdentity
 UserContext
 authorization
 CustomUserClaims
+Tests
 ```
