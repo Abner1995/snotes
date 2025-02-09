@@ -34,9 +34,6 @@ Update-Database
 ### RestaurantsDbContext
 
 ```csharp
-:tags: [hide-cell, thebe-init]
-
-
 using CleanArchitecture.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 

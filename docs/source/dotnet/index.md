@@ -5,4 +5,5 @@ dotnet学习笔记
 ```{toctree}
 WebAPI/index
 CleanArchitecture/index
+EntityFrameworkCore/index
 ```
