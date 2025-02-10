@@ -1,4 +1,4 @@
-# 查用命令  
+# 常用命令  
 
 ```bash
 Add-Migration  

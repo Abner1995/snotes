@@ -38,6 +38,20 @@ Markdown参看编写文档 [Markdown](https://github.com/MicrosoftDocs/Advertisi
 
 ```{toctree}
 :maxdepth: 2
+:caption: dotnet
+
+dotnet/index
+```
+
+```{toctree}
+:maxdepth: 2
+:caption: Git
+
+git/index
+```
+
+```{toctree}
+:maxdepth: 2
 :caption: Linux
 
 Linux/commands/index
@@ -48,13 +62,6 @@ Linux/commands/index
 :caption: python
 
 python/index
-```
-
-```{toctree}
-:maxdepth: 2
-:caption: dotnet
-
-dotnet/index
 ```
 
 ```{toctree}
