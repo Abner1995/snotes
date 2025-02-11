@@ -5,5 +5,6 @@
 
 ```{toctree}
 firewalld
+iftop
 tail
 ```

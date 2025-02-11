@@ -17,7 +17,7 @@ git push -u origin master
 git config --global core.ignorecase false
 ```  
 
-# 忽略文件跟踪
+## 忽略文件跟踪
 ```bash  
 git rm --cached dbmigration/config/phoenix.php
 git add .gitignore
