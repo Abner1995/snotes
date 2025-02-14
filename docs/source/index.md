@@ -59,6 +59,13 @@ Linux/commands/index
 
 ```{toctree}
 :maxdepth: 2
+:caption: MySQL
+
+MySQL/index
+```
+
+```{toctree}
+:maxdepth: 2
 :caption: python
 
 python/index
