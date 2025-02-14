@@ -45,6 +45,13 @@ dotnet/index
 
 ```{toctree}
 :maxdepth: 2
+:caption: docker
+
+docker/index
+```
+
+```{toctree}
+:maxdepth: 2
 :caption: Git
 
 git/index
@@ -78,3 +85,9 @@ python/index
 PHP/index
 ```
 
+```{toctree}
+:maxdepth: 2
+:caption: redis
+
+redis/index
+```
