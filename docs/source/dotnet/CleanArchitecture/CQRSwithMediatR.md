@@ -11,9 +11,11 @@
 简单来说，CQRS 和 MediatR 在 WebAPI 中的作用就是帮助开发者保持代码的简洁、模块化，同时提升系统的可维护性和可扩展性。  
 
 ## 接下来进行重构CreateRestaurant方法    
-
+在Application安装
 ```bash  
 Install-Package MediatR -Version 12.4.1  
+Install-Package FluentValidation.AspNetCore -Version 11.3.0
+Install-Package AutoMapper.Extensions.Microsoft.DependencyInjection -Version 12.0.1
 ```  
 
 1. 新建CreateRestaurantCommand.cs、CreateRestaurantCommandHandler.cs、CreateRestaurantCommandValidator.cs
