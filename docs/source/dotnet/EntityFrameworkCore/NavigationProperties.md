@@ -38,8 +38,11 @@ namespace ContactSMS.Infrastructure.Configs
             builder.HasKey(t => t.Id);
             builder.Property(t => t.Name).IsRequired().HasComment("姓名");
             builder.Property(t => t.Company).HasComment("公司");
+            builder.HasMany(c => c.Phones)
+            .WithOne()
+            .HasForeignKey("ContactId");
             // 忽略导航属性，无需映射到数据表中，不可以使用EFCore中的虚拟导航属性
-            builder.Ignore(c => c.Phones);
+            // builder.Ignore(c => c.Phones);
         }
     }
 }

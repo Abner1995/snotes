@@ -1,5 +1,5 @@
 # Log  
-
+在API中安装包
 ```bash  
 Install-Package Serilog.AspNetCore -Version 9.0.0  
 Install-Package Serilog.Sinks.ApplicationInsights -Version 4.0.0  
