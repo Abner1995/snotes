@@ -66,5 +66,6 @@ ASPNETIdentity
 UserContext
 authorization
 CustomUserClaims
+JWT
 Tests
 ```
