@@ -52,6 +52,13 @@ docker/index
 
 ```{toctree}
 :maxdepth: 2
+:caption: fund
+
+fund/index
+```
+
+```{toctree}
+:maxdepth: 2
 :caption: Git
 
 git/index
