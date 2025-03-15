@@ -6,4 +6,5 @@
 buysell
 Referenceindicators
 SelectFunds
+StopLossPoint
 ```
