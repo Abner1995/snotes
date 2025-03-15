@@ -4,4 +4,6 @@
 
 ```{toctree}
 buysell
+Referenceindicators
+SelectFunds
 ```
