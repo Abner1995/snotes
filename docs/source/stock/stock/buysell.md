@@ -78,7 +78,7 @@
 
 
 ### 综合决策流程图  
-![alt text](../../images/stock/跌破平台低点或20日均线.png)
+![alt text](../../images/stock/fallbelow.png)
 
 ### 注意事项
   - 平台低点的确认：
