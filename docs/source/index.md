@@ -55,7 +55,14 @@ docker/index
 :caption: fund
 
 fund/index
-```
+```  
+
+```{toctree}
+:maxdepth: 2
+:caption: stock
+
+stock/index
+```  
 
 ```{toctree}
 :maxdepth: 2
