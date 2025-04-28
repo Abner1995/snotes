@@ -40,4 +40,12 @@ SELECT SLEEP(3);
 # 我们想要按照查询时间排序，查看前五条 SQL 语句，这样写即可：
 mysqldumpslow -s t -t 5 /www/server/data/mysql-slow.log
 
+# 28800
+SELECT @@global.wait_timeout, @@session.wait_timeout, @@session.interactive_timeout;
+
+# 监控Sleep连接数
+SHOW STATUS LIKE 'Threads_connected';
+
+# 查找长时间Sleep连接
+SELECT * FROM information_schema.processlist WHERE COMMAND = 'Sleep' AND TIME > 60;
 ``` 
