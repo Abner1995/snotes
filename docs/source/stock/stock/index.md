@@ -6,4 +6,5 @@
 buysell
 platformlow
 stockindex
+stock
 ```
