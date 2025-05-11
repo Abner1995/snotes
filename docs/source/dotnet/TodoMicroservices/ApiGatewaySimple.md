@@ -10,7 +10,9 @@ Install-Package Ocelot.Provider.Polly       # 熔断支持
 Install-Package Microsoft.AspNetCore.Authentication.JwtBearer # JWT验证
 ```  
 
-## 基础配置 (Program.cs)
+## ApiGateway
+
+### 基础配置 (Program.cs)
 ```csharp
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
@@ -45,7 +47,7 @@ await app.UseOcelot();
 app.Run();
 ```
 
-## ApiGateway
+
 
 ### ocelot.json配置文件
 ```json
@@ -62,6 +64,32 @@ app.Run();
         }
       ],
       "UpstreamPathTemplate": "/users/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    // 管理服务路由
+    {
+      "DownstreamPathTemplate": "/api/Admins/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "apiadmin",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/Admins/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    // Todo服务路由
+    {
+      "DownstreamPathTemplate": "/api/Todos/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "apitodo",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/Todos/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     }
   ],
@@ -106,7 +134,7 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "ApiGateway.dll"]
 ``` 
 
-## ApiUser
+## ApiUser(ApiTodo，ApiAdmin)
 
 ### Dockerfile（对应系统）
 ![alt text](../../images/dotnet/TodoMicroservices/ApiUser.png)  
@@ -161,12 +189,40 @@ services:
       - ASPNETCORE_URLS=http://+:8080  
     depends_on:
       - apiuser
+      - apiadmin
+      - apitodo
     networks:
       - todo-network
 
   apiuser:
     build:
       context: ./ApiUser
+      dockerfile: Dockerfile
+      args:
+        BUILD_CONFIGURATION: Release
+    expose:
+      - "8080"  
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+    networks:
+      - todo-network
+
+  apiadmin:
+    build:
+      context: ./ApiAdmin
+      dockerfile: Dockerfile
+      args:
+        BUILD_CONFIGURATION: Release
+    expose:
+      - "8080"  
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+    networks:
+      - todo-network
+
+  apitodo: 
+    build:
+      context: ./ApiTodo
       dockerfile: Dockerfile
       args:
         BUILD_CONFIGURATION: Release
@@ -300,3 +356,5 @@ depends_on:
 |Ocelot DownstreamPort	|8080（与服务监听端口一致）
 |Ocelot UpstreamPathTemplate	|/users/{everything}
 |Ocelot BaseUrl	|http://localhost:5106
+
+5. ASP.NET Core 的路由大小写敏感性
