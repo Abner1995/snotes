@@ -13,6 +13,11 @@ C:\Python312\
 比如在D盘中创建python目录，里面放虚拟环境和项目。  
 :::
 
+```bash  
+pip install detectron2==0.4+cu101 \
+  -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.8/index.html \
+  --extra-index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```  
 
 ## 创建虚拟环境  
 ```bash  
