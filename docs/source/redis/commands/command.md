@@ -50,6 +50,8 @@ LRANGE aichongchong:front:order:quque:7763 0 1000
 zAdd zRange
 sAdd sMembers
 rpush lpop
+
+flushdb
 ```  
 
 # redis配置  
