@@ -19,7 +19,10 @@ git config --global core.ignorecase false
 
 ## 忽略文件跟踪
 ```bash  
+# 文件
 git rm --cached dbmigration/config/phoenix.php
+# 目录
+git rm -r --cached trash
 git add .gitignore
 git commit -m "Add files to .gitignore"
 ```  
