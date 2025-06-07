@@ -7,4 +7,5 @@ buysell
 platformlow
 stockindex
 stock
+commonSense
 ```
