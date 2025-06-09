@@ -2,4 +2,5 @@
 
 ```{toctree}
 stock/index
+technicalAnalysis/index
 ```
