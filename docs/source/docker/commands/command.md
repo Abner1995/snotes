@@ -26,4 +26,7 @@ docker logs mysqld_exporter
 # 进入容器
 docker exec -it 34345f42cfed bash
 
+docker run --name myredis -v E:\docker\redis\redis.conf:/usr/local/etc/redis/redis.conf -d redis redis-server /usr/local/etc/redis/redis.conf
+
+docker run --name myredis -v E:\docker\redis\redis.conf:/usr/local/etc/redis/redis.conf -p 6379:6379 -d redis redis-server /usr/local/etc/redis/redis.conf
 ``` 
