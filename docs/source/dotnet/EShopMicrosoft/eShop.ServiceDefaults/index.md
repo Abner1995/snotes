@@ -2,4 +2,5 @@
 
 ```{toctree}
 HttpClientExtensions
+OpenApi.Extensions
 ```
