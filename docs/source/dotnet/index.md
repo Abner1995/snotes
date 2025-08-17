@@ -7,4 +7,5 @@ WebAPI/index
 CleanArchitecture/index
 EntityFrameworkCore/index
 TodoMicroservices/index
+EShopMicroservices/index
 ```

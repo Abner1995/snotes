@@ -1,0 +1,5 @@
+# eShop.ServiceDefaults
+
+```{toctree}
+HttpClientExtensions
+```
