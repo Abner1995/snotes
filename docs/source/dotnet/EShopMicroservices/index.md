@@ -99,4 +99,5 @@ WebUI 购物应用微服务
 ![alt text](../../images/dotnet/EShopMicroservices/courseflow.png)
 
 ```{toctree}
+Catalog.API/index
 ```
