@@ -6,6 +6,8 @@ export DOWNLOAD_URL="https://docker.1ms.run"
 
 docker ps
 
+docker-compose up -d
+
 # 查询某个容器  
 docker ps | grep prometheus  
 

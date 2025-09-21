@@ -8,4 +8,11 @@ Carter：当前学习时是安装到某个项目
 MediatR：公共库
 Mapster：公共库
 
+添加新的包看看是否可以公用
+
 BuildingBlocks:公共库
+
+Catalog.API
+包
+Carter
+Marten
