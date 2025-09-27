@@ -100,4 +100,5 @@ WebUI 购物应用微服务
 
 ```{toctree}
 Catalog.API/index
+Basket.API/index
 ```
