@@ -102,4 +102,5 @@ WebUI 购物应用微服务
 BuildingBlocks/index
 Catalog.API/index
 Basket.API/index
+Discount.Grpc/index
 ```
