@@ -12,3 +12,8 @@ Carter
 Marten
 AspNetCore.HealthChecks.NpgSql
 AspNetCore.HealthChecks.UI.Client
+Microsoft.Extensions.Caching.StackExchangeRedis
+Scrutor
+AspNetCore.HealthChecks.NpgSql
+AspNetCore.HealthChecks.Redis
+AspNetCore.HealthChecks.UI.Client

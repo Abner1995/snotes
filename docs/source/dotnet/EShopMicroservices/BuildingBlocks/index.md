@@ -1,0 +1,9 @@
+# BuildingBlocks
+
+BuildingBlocks:公共库
+包
+MediatR
+Mapster
+FluentValidation
+FluentValidation.AspNetCore
+FluentValidation.DependencyInjectionExtensions
