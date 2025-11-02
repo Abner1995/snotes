@@ -6,14 +6,18 @@
 
 ![alt text](../../../images/dotnet/EShopMicroservices/BasketCQRSAndMediatRRequestLifeCycle.png)
 
+![alt text](../../../images/dotnet/EShopMicroservices/BasketConsumesDiscountGrpc.png)
+
 Basket.API
 包
-Carter
-Marten
-AspNetCore.HealthChecks.NpgSql
-AspNetCore.HealthChecks.UI.Client
-Microsoft.Extensions.Caching.StackExchangeRedis
-Scrutor
 AspNetCore.HealthChecks.NpgSql
 AspNetCore.HealthChecks.Redis
 AspNetCore.HealthChecks.UI.Client
+Carter 
+Grpc.AspNetCore
+Marten
+Microsoft.Extensions.Caching.StackExchangeRedis
+Microsoft.VisualStudio.Azure.Containers.Tools.Targets
+Scrutor
+
+Grpc.AspNetCore要与Discount.Grpc版本一致
