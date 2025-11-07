@@ -160,3 +160,15 @@ iptables -D INPUT -p tcp --syn --dport 443 -m connlimit --connlimit-above 30 -j 
 /www/server/nginx/conf/nginx.conf  
 
 ``` 
+
+atop -r /var/log/atop/atop_20251106 -b 15:00
+
+# 1. 检查MySQL在16:20左右的慢查询
+sudo grep "16:2[0-9]" /www/server/data/mysql-slow.log
+
+# 2. 查看MySQL二进制日志时间点
+sudo mysqlbinlog /var/lib/mysql/binlog.xxxxxx | grep "16:20"
+
+# 3. 检查是否有定时任务在16:20执行
+sudo crontab -l
+sudo grep -r "16:20" /etc/cron.*
