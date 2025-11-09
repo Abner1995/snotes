@@ -103,4 +103,5 @@ BuildingBlocks/index
 Catalog.API/index
 Basket.API/index
 Discount.Grpc/index
+Order/index
 ```
