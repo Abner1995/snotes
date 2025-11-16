@@ -26,4 +26,5 @@ Ordering.Infrastructure
 
 ```{toctree}
 Ordering.Domain
+Ordering.Infrastructure
 ```
