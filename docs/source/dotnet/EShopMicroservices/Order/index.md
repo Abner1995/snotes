@@ -10,6 +10,8 @@
 
 ![alt text](../../../images/dotnet/EShopMicroservices/DomainEventsOrderMicroservice.png)
 
+![alt text](../../../images/dotnet/EShopMicroservices/PubSUbTabbitMQArchitecture.png)
+
 Ordering.Application
 引入
 BuildingBlocks
