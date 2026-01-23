@@ -3,5 +3,6 @@
 python学习笔记  
 
 ```{toctree}
+conda
 window
 ```
