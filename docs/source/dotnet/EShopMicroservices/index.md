@@ -104,4 +104,5 @@ Catalog.API/index
 Basket.API/index
 Discount.Grpc/index
 Order/index
+APIGateWay/index
 ```
