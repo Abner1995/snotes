@@ -159,6 +159,7 @@ iptables -D INPUT -p tcp --syn --dport 443 -m connlimit --connlimit-above 30 -j 
 # 查看 nginx 配置文件
 /www/server/nginx/conf/nginx.conf  
 
+tail -n 50 /www/wwwlogs/www.fangth.cn.error.log
 ``` 
 
 atop -r /var/log/atop/atop_20251106 -b 15:00
