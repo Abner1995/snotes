@@ -173,3 +173,26 @@ sudo mysqlbinlog /var/lib/mysql/binlog.xxxxxx | grep "16:20"
 # 3. 检查是否有定时任务在16:20执行
 sudo crontab -l
 sudo grep -r "16:20" /etc/cron.*
+
+mysql -h 8.153.74.62 -P 3306 -u root -p
+
+mysql -u root -p
+
+看 nginx 当前连接数
+```bash
+ss -s
+``` 
+
+PHP-FPM
+```bash
+# 观察大量 php-fpm 状态 S 或 R
+ps -ylC php-fpm --sort:rss
+
+# 能看到正在处理多少请求
+netstat -anp | grep php-cgi | wc -l
+``` 
+
+MySQL
+```bash
+SHOW PROCESSLIST;
+``` 
