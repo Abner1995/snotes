@@ -196,3 +196,16 @@ MySQL
 ```bash
 SHOW PROCESSLIST;
 ``` 
+
+```bash
+root@s881244:/etc/v2ray# systemctl cat v2ray | grep -i exec
+ExecStart=/etc/v2ray/bin/v2ray run -config /etc/v2ray/config.json -confdir /etc/v2ray/conf
+root@s881244:/etc/v2ray# cat /etc/v2ray/conf/*.json
+# 重启 V2Ray
+systemctl restart v2ray
+# 查看状态
+systemctl status v2ray
+tail -f /var/log/v2ray/error.log
+ps aux | grep v2ray
+ss -tlnp | grep -E ':(80|443|你的实际端口号)'
+``` 
