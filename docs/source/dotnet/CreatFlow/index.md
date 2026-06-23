@@ -4,4 +4,8 @@
 
 ```{toctree}
 domain-layer-design
+application-infrastructure-design-notes
+server-layer-design
+ddd-project-reference-patterns
+iunitofwork-when-to-use
 ```
